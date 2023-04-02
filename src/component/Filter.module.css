@@ -1,0 +1,49 @@
+.filter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.filter button {
+  margin: 10px 5px;
+  font-size: 1.1rem;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  transition: all 0.5s;
+  text-transform: capitalize;
+}
+
+.filter button:hover {
+  cursor: pointer;
+  box-shadow: 5px 2px 4px rgba(17, 19, 14, 0.5);
+}
+
+.completed {
+  background-color: rgb(6, 165, 6);
+}
+
+.progress {
+  background-color: rgb(231, 231, 3);
+}
+
+.todo {
+  background-color: rgb(240, 20, 203);
+}
+
+.showall {
+  background-color: #1a75ff;
+}
+@media (max-width: 620px) {
+  .filter {
+    display: flex;
+    flex-direction: column;
+  }
+  .filter button {
+    width: 90%;
+    margin: 5px 0;
+  }
+}

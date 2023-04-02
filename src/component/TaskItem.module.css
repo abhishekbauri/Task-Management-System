@@ -1,0 +1,82 @@
+.taskItem {
+  width: 60%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+.taskItem:hover {
+  box-shadow: 5px 2px 4px rgba(17, 19, 14, 0.5);
+}
+.taskTitle {
+  text-transform: uppercase;
+  padding: 5px 0;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.taskDescription {
+  letter-spacing: 1px;
+}
+
+.taskDescription p {
+  text-align: center;
+}
+
+.taskDescription h4 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.todo {
+  font-weight: 900;
+  color: rgb(240, 20, 203);
+}
+.completed {
+  color: rgb(6, 165, 6);
+  font-weight: 900;
+}
+.progress {
+  color: rgb(231, 231, 3);
+  font-weight: 900;
+}
+
+.markComplete {
+  margin: 10px 5px;
+  font-size: 1.1rem;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s;
+  background-color: rgb(6, 165, 6);
+  color: white;
+}
+
+.markComplete:hover {
+  cursor: pointer;
+}
+
+.markDelete {
+  margin: 10px 5px;
+  font-size: 1.1rem;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s;
+  background-color: #e20f0f;
+  color: white;
+}
+
+.markDelete:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 620px) {
+  .taskItem {
+    width: 90%;
+  }
+}
